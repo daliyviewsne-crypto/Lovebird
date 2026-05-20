@@ -1,0 +1,101 @@
+.action-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 20px;
+  background: white;
+  border-top: 1px solid #f0f0f0;
+}
+
+.action-btn {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.action-btn.large {
+  width: 80px;
+  height: 80px;
+}
+
+.action-btn.small {
+  width: 60px;
+  height: 60px;
+}
+
+.action-btn.nope {
+  background: white;
+  color: #FF2D55;
+  border: 3px solid #FF2D55;
+}
+
+.action-btn.nope:hover {
+  background: #FF2D55;
+  color: white;
+  transform: scale(1.1);
+}
+
+.action-btn.like {
+  background: linear-gradient(135deg, #FF2D55 0%, #FF9500 100%);
+  color: white;
+}
+
+.action-btn.like:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 45, 85, 0.4);
+}
+
+.action-btn.superlike {
+  background: white;
+  color: #00BFFF;
+  border: 3px solid #00BFFF;
+}
+
+.action-btn.superlike:hover {
+  background: #00BFFF;
+  color: white;
+  transform: scale(1.05);
+}
+
+.action-btn.rewind {
+  background: white;
+  color: #FFD700;
+  border: 3px solid #FFD700;
+}
+
+.action-btn.rewind:hover:not(:disabled) {
+  background: #FFD700;
+  color: white;
+  transform: scale(1.05);
+}
+
+.action-btn.boost {
+  background: white;
+  color: #A855F7;
+  border: 3px solid #A855F7;
+}
+
+.action-btn.boost:hover:not(:disabled) {
+  background: #A855F7;
+  color: white;
+  transform: scale(1.05);
+}
+
+.action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.action-btn .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
